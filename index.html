@@ -50,9 +50,11 @@
       else {
         wordSource = words
       }
+      
       var chosenWord = wordSource[Math.floor(Math.random()*wordSource.length)].toUpperCase();
       document.getElementById('child').innerText = chosenWord;
-      window.fitText(document.getElementById('child'), .7);
+      
+      window.fitText(document.getElementById('child'), chosenWord.length/12);
   </script>
   
 </body>
